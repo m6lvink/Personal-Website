@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Melvin Kaneshiro</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <!-- NAVBAR -->
+  <header class="navbar">
+    <nav>
+      <ul>
+        <li><a href="#top">Home</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#about">About Me</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Page Wrapper -->
+  <div id="top">
+
+    <!-- Hero Section -->
+    <section class="hero" data-aos="fade-in">
+      <div class="hero-overlay">
+        <div class="hero-content">
+          <h1>Melvin Kaneshiro</h1>
+          <p>Student | Developer | Learner</p>
+          <div class="hero-buttons">
+            <a href="#projects" class="btn blue">Explore My Work</a>
+            <a href="#about" class="btn gold">About Me</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Me Section -->
+    <section class="features" id="about" data-aos="fade-up">
+      <h2>About Me</h2>
+
+      <div class="about-wrapper">
+        <!-- Left: Feature Cards -->
+        <div class="feature-list two-column">
+          <div class="feature card-style" data-aos="fade-up">
+            <h3>Education</h3>
+            <p>
+              I'm a 3rd year Computer Science student at the University of Hawaiʻi at Hilo, pursuing a double major in
+              Computer Science and Japanese Studies. I’m passionate about solving problems and studying languages!
+            </p>
+          </div>
+          <div class="feature card-style" data-aos="fade-up" data-aos-delay="100">
+            <h3>Coding Languages</h3>
+            <p>
+              I have strong experience in C++ and Python, with additional knowledge in HTML, CSS, and JavaScript. I’ve
+              used these tools to build both personal and academic projects, including CLI tools and full-stack web
+              applications.
+            </p>
+          </div>
+          <div class="feature card-style" data-aos="fade-up" data-aos-delay="200">
+            <h3>Global Learning Experience</h3>
+            <p>
+              I studied abroad in Kyoto, Japan, where I immersed myself in the culture and language. I now speak
+              Japanese at an intermediate level and continue learning every day.
+            </p>
+          </div>
+          <div class="feature card-style" data-aos="fade-up" data-aos-delay="300">
+            <h3>Hobbies</h3>
+            <p>
+              I enjoy going to the gym regularly to stay active and challenge myself. I’m also passionate
+              about traveling and experiencing different cultures!
+            </p>
+          </div>
+        </div>
+
+        <div class="about-photo" data-aos="zoom-in">
+          <div class="photo-wrapper">
+            <img src="assets/images/profile.jpg" alt="Melvin Kaneshiro Photo" />
+            <p class="photo-caption">Melvin Kaneshiro - Aspiring Dev</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- Certifications Section -->
+    <section class="features" id="certifications" data-aos="fade-up">
+      <h2>Certifications</h2>
+      <div class="certification-list">
+        <div class="card-style cert-card" data-aos="fade-up">
+          <h3>Google Cybersecurity Certificate</h3>
+          <p>Completed the Google Cybersecurity Professional Certificate through Coursera, gaining foundational
+            knowledge in network security and risk management</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section class="portfolio" id="projects">
+      <h2>My Projects</h2>
+      <div class="portfolio-grid">
+        <!-- FocusPad -->
+        <div class="card">
+          <img src="assets/images/focuspad.jpg" alt="FocusPad" />
+          <h3>FocusPad</h3>
+          <p>A personal note-taking app built with Flask, SQLite, and Bootstrap.</p>
+          <a class="btn blue" href="https://github.com/m6lvink/FocusPad" target="_blank">View Code</a>
+          <a class="btn gold" href="https://focuspad.onrender.com/" target="_blank">Try It Out</a>
+          <!-- Replace with your actual URL -->
+        </div>
+
+        <!-- Resume Scanner -->
+        <div class="card">
+          <img src="assets/images/resume-scanner.jpg" alt="Resume Scanner" />
+          <h3>AI Resume Scanner</h3>
+          <p>CLI tool using Sentence-BERT to compare resumes to job descriptions.</p>
+          <a class="btn blue" href="https://github.com/m6lvink/AI-Resume-Scanner" target="_blank">View Code</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section" id="contact" data-aos="fade-up">
+      <h2>Contact Me</h2>
+      <div class="contact-wrapper">
+
+        <!-- Left: Contact Info -->
+        <div class="contact-details">
+          <p><strong>Get in Touch:</strong></p>
+          <div class="contact-buttons">
+            <a class="btn gold" href="mailto:melvin.kaneshiro@yahoo.com">Email Me</a>
+            <a class="btn blue" href="https://www.linkedin.com/in/mnkaneshiro" target="_blank">LinkedIn</a>
+            <a class="btn gold" href="https://www.instagram.com/m6lvin" target="_blank">Instagram</a>
+          </div>
+        </div>
+
+
+        <!-- Right: Form -->
+        <form action="https://formspree.io/f/mkgjryel" method="POST" class="contact-form" id="form">
+          <input type="text" name="name" placeholder="Your Name" required />
+          <input type="email" name="email" placeholder="Your Email" required />
+          <textarea name="message" placeholder="Your Message" required></textarea>
+          <button type="submit">Send Message</button>
+        </form>
+      </div>
+    </section>
+
+  </div>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</body>
+
+</html>
